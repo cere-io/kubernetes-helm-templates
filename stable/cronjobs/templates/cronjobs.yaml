@@ -11,7 +11,7 @@ metadata:
   labels: {{ include "k8s-common.labels.standard" $ | nindent 4 }}
     app.kubernetes.io/component: cronjob
   {{- if $value.annotations }}
-  annotations: {{ toYaml $value.annotations | indent 4 }}
+  annotations: {{ toYaml $value.annotations | nindent 4 }}
   {{- end }}
 spec:
   schedule: {{ $value.schedule | quote }}
