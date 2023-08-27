@@ -8,11 +8,11 @@ keywords:
   - helper
   - template
   - function
-home: https://next-gen-infrastructure.github.io/kubernetes-helm-charts
+home: https://cere-io.github.io/kubernetes-helm-templates
 sources:
-  - https://github.com/next-gen-infrastructure/kubernetes-helm-charts/tree/main/stable/k8s-common
+  - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/k8s-common
 maintainers:
-  - name: Alexander Dobrodey
-    url: https://github.com/ADobrodey
+  - name: Oleg Yankovich
+    url: https://github.com/krolol
 annotations:
   category: Infrastructure

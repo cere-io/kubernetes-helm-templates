@@ -6,10 +6,10 @@ type: application
 dependencies:
   - name: k8s-common
     version: 1.0.0
-    repository: https://next-gen-infrastructure.github.io/kubernetes-helm-charts
-home: https://next-gen-infrastructure.github.io/kubernetes-helm-charts
+    repository: https://cere-io.github.io/kubernetes-helm-templates
+home: https://cere-io.github.io/kubernetes-helm-templates
 sources:
-  - https://github.com/next-gen-infrastructure/kubernetes-helm-charts/tree/main/stable/configmaps
+  - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/configmaps
 maintainers:
-  - name: Alexander Dobrodey
-    url: https://github.com/ADobrodey
+  - name: Oleg Yankovich
+    url: https://github.com/krolol
