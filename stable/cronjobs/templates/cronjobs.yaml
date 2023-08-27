@@ -3,7 +3,7 @@
 {{- range $key, $value := $allCronJobs }}
 
 ---
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: {{ printf "%s-%s" $namePrefix $key | trunc 52 | trimSuffix "-"}}
