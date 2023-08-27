@@ -1,1 +1,146 @@
-hello
+apiVersion: v1
+entries:
+  configmaps:
+  - apiVersion: v2
+    created: "2023-08-10T13:24:45.250255705Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: The chart for creating configmaps.
+    digest: e8948680f9201f16d9919a39ba83dd3b29ece509a4764f55174b2431cc111a4b
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: configmaps
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/configmaps
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/configmaps-1.0.0/configmaps-1.0.0.tgz
+    version: 1.0.0
+  cronjobs:
+  - apiVersion: v2
+    created: "2023-08-10T13:24:45.426197955Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Kubernetes Cron Jobs
+    digest: 258a0ce3ac460547753847dcfefbbe3d4a5ba01c5f91ba2f8011fa8607350b4f
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: cronjobs
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/cronjobs
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/cronjobs-1.0.0/cronjobs-1.0.0.tgz
+    version: 1.0.0
+  deployment:
+  - apiVersion: v2
+    created: "2023-08-10T13:24:45.60855961Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Typical microservice chart. Supports Ingress controller, horizontal-scalable
+      containers
+    digest: 4432bfa85bc8a59d38a5da03a9d6067d8d1b27f6c30c8e654f6ce834a77edc0a
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: deployment
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/deployment
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/deployment-1.0.0/deployment-1.0.0.tgz
+    version: 1.0.0
+  jobs:
+  - apiVersion: v2
+    created: "2023-08-22T17:51:40.474855825Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Kubernetes Jobs
+    digest: c38df2ae510b7c84a421ac2359f2c03423e754ee420efc8e000039fc1f51c6a0
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: jobs
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/jobs
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/jobs-1.0.0/jobs-1.0.0.tgz
+    version: 1.0.0
+  k8s-common:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    created: "2023-08-10T13:14:43.749290827Z"
+    description: A Library Helm Chart for grouping common logic between charts. This
+      chart is not deployable by itself.
+    digest: dd976685006ef8a8a984cf75814668bc41bbf93fcba6cd777d19c5d3997fa532
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: k8s-common
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/k8s-common
+    type: library
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/k8s-common-1.0.0/k8s-common-1.0.0.tgz
+    version: 1.0.0
+  statefulset:
+  - apiVersion: v2
+    created: "2023-08-10T13:24:45.829543606Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Typical StateFul Set application
+    digest: 9d1cc1903af21ad6d53ce1da1ea7e76e676bda0cff457c14b489c748055a00d6
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: statefulset
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/statefulset
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
+    version: 1.0.0
+  vaultsecrets:
+  - apiVersion: v2
+    created: "2023-08-10T13:24:45.992875263Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Generator of the secrets from remote Vault server
+    digest: 64e4e772dd85c9f8a553e532001d236ef8519a34ece09585ec82454f3430d857
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: vaultsecrets
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/vaultsecrets
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-08-22T17:51:40.765558538Z"
