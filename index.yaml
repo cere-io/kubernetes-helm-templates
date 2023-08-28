@@ -22,6 +22,24 @@ entries:
     version: 1.0.0
   cronjobs:
   - apiVersion: v2
+    created: "2023-08-28T09:27:38.85575172Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Kubernetes Cron Jobs
+    digest: 8ca0a18c983080542d31734158319171a771b65861400e80b510a115ffce7245
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: cronjobs
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/cronjobs
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/cronjobs-1.0.1/cronjobs-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2023-08-10T13:24:45.426197955Z"
     dependencies:
     - name: k8s-common
@@ -143,4 +161,4 @@ entries:
     urls:
     - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-22T17:51:40.765558538Z"
+generated: "2023-08-28T09:27:38.85575992Z"
