@@ -80,6 +80,24 @@ entries:
     version: 1.0.0
   jobs:
   - apiVersion: v2
+    created: "2023-08-30T18:13:42.322131819Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Kubernetes Jobs
+    digest: de84f824249c93961f7c0e33731306238080c54d6e23f9bccc8d420538c09237
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: jobs
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/jobs
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/jobs-1.0.2/jobs-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     created: "2023-08-30T17:55:01.843492193Z"
     dependencies:
     - name: k8s-common
@@ -179,4 +197,4 @@ entries:
     urls:
     - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-30T17:55:01.843516994Z"
+generated: "2023-08-30T18:13:42.32214942Z"
