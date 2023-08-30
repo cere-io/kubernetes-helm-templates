@@ -1,0 +1,14 @@
+apiVersion: v2
+name: jobs
+version: 1.0.0
+description: Kubernetes Jobs
+type: application
+dependencies:
+  - name: k8s-common
+    version: 1.0.0
+    repository: https://cere-io.github.io/kubernetes-helm-templates
+sources:
+  - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/jobs
+maintainers:
+  - name: Oleg Yankovich
+    url: https://github.com/krolol
