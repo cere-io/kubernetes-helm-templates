@@ -49,7 +49,7 @@ spec:
           {{- if $.Values.tolerations }}
           tolerations: {{ toYaml $.Values.tolerations | nindent 12 }}
           {{- end }}
-          restartPolicy: "Never"
+          restartPolicy: {{ $.Values.restartPolicy | default "Never" }}
           serviceAccountName: {{ include "k8s-common.serviceAccount.name" $ }}
           containers:
             - name: {{ $key }}
