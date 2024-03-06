@@ -59,6 +59,26 @@ entries:
     version: 1.0.0
   deployment:
   - apiVersion: v2
+    created: "2024-03-06T18:01:14.869600701Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.0
+    description: Typical microservice chart. Supports Ingress controller, horizontal-scalable
+      containers
+    digest: 7214f022fa23657af15565b36e15265199372d6fe44eb6b10b9ab6906d77a507
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: deployment
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/deployment
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/deployment-1.0.1/deployment-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2023-08-10T13:24:45.60855961Z"
     dependencies:
     - name: k8s-common
@@ -197,4 +217,4 @@ entries:
     urls:
     - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-30T18:13:42.32214942Z"
+generated: "2024-03-06T18:01:14.8696217Z"
