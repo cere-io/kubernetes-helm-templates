@@ -157,6 +157,29 @@ entries:
   - annotations:
       category: Infrastructure
     apiVersion: v2
+    created: "2024-03-12T13:22:54.674354888Z"
+    description: A Library Helm Chart for grouping common logic between charts. This
+      chart is not deployable by itself.
+    digest: 637d71ce53392d1beefd1835d8687119d96965aee4480a46f3ff43b5c36ace51
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: k8s-common
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/k8s-common
+    type: library
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/k8s-common-1.0.1/k8s-common-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
     created: "2023-08-10T13:14:43.749290827Z"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
@@ -217,4 +240,4 @@ entries:
     urls:
     - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
     version: 1.0.0
-generated: "2024-03-06T18:01:14.8696217Z"
+generated: "2024-03-12T13:22:54.674380175Z"
