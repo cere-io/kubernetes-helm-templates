@@ -40,6 +40,12 @@ Return generated container configuration.
     httpGet:
       path: {{ .Values.livenessProbe.healthCheckPath | default .Values.service.healthCheckPath }}
       port: http
+    {{- else if .Values.livenessProbe.command}}
+    exec:
+      command:
+        - "/bin/sh"
+        - "-c"
+        - "{{ .Values.livenessProbe.command }}"
     {{- end }}
     initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds | default 0}}
     periodSeconds: {{ .Values.livenessProbe.periodSeconds | default 10 }}
@@ -56,6 +62,12 @@ Return generated container configuration.
     httpGet:
       path: {{ .Values.readinessProbe.healthCheckPath | default .Values.service.healthCheckPath }}
       port: http
+    {{- else if .Values.readinessProbe.command}}
+    exec:
+      command:
+        - "/bin/sh"
+        - "-c"
+        - "{{ .Values.readinessProbe.command }}"
     {{- end }}
     initialDelaySeconds: {{ .Values.readinessProbe.initialDelaySeconds | default 0}}
     periodSeconds: {{ .Values.readinessProbe.periodSeconds | default 10 }}
