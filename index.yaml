@@ -245,6 +245,25 @@ entries:
     version: 1.0.0
   statefulset:
   - apiVersion: v2
+    created: "2025-02-06T00:53:54.013970934Z"
+    dependencies:
+    - name: k8s-common
+      repository: https://cere-io.github.io/kubernetes-helm-templates
+      version: 1.0.2
+    description: Typical StateFul Set application
+    digest: f494058d3f9c47b9f83aafd323be71bfe2b7a3fd14678d271981b36cb22992cf
+    home: https://cere-io.github.io/kubernetes-helm-templates
+    maintainers:
+    - name: Oleg Yankovich
+      url: https://github.com/krolol
+    name: statefulset
+    sources:
+    - https://github.com/cere-io/kubernetes-helm-templates/tree/master/stable/statefulset
+    type: application
+    urls:
+    - https://github.com/cere-io/kubernetes-helm-templates/releases/download/statefulset-1.0.1/statefulset-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2023-08-10T13:24:45.829543606Z"
     dependencies:
     - name: k8s-common
@@ -283,4 +302,4 @@ entries:
     urls:
     - https://github.com/cere-io/kubernetes-helm-templates/releases/download/vaultsecrets-1.0.0/vaultsecrets-1.0.0.tgz
     version: 1.0.0
-generated: "2025-02-06T00:52:08.508219328Z"
+generated: "2025-02-06T00:53:54.013992885Z"
