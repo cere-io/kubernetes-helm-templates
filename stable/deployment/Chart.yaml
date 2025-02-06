@@ -1,11 +1,11 @@
 apiVersion: v2
 name: deployment
-version: 1.0.2
+version: 1.0.3
 description: Typical microservice chart. Supports Ingress controller, horizontal-scalable containers
 type: application
 dependencies:
   - name: k8s-common
-    version: 1.0.1
+    version: 1.0.2
     repository: https://cere-io.github.io/kubernetes-helm-templates
 home: https://cere-io.github.io/kubernetes-helm-templates
 sources:

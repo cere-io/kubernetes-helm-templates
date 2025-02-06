@@ -41,7 +41,7 @@ alb.ingress.kubernetes.io/group.name: {{ .Values.global.org }}-{{ .Values.global
 alb.ingress.kubernetes.io/healthcheck-path: "{{ .Values.service.healthCheckPath | default "/" }}"
 alb.ingress.kubernetes.io/listen-ports: "[{\"HTTP\":80},{\"HTTPS\":443}]"
 alb.ingress.kubernetes.io/scheme: {{ if .Values.ingress.public -}}internet-facing{{- else -}}internal{{- end }}
-alb.ingress.kubernetes.io/security-groups: "generic-web{{ if .Values.ingress.public -}} ,generic-public-web{{- end -}}"
+alb.ingress.kubernetes.io/security-groups: "{{ .Values.global.environmentName}}-sg"
 alb.ingress.kubernetes.io/ssl-policy: "ELBSecurityPolicy-TLS-1-2-2017-01"
 alb.ingress.kubernetes.io/success-codes: "200"
 alb.ingress.kubernetes.io/target-type: "ip"
@@ -56,7 +56,7 @@ alb.ingress.kubernetes.io/group.name: {{ .Release.Namespace }}-extra
 alb.ingress.kubernetes.io/healthcheck-path: "{{ .Values.service.healthCheckPath | default "/" }}"
 alb.ingress.kubernetes.io/listen-ports: "[{\"HTTP\":80},{\"HTTPS\":443}]"
 alb.ingress.kubernetes.io/scheme: {{ if .Values.ingressExtra.public -}}internet-facing{{- else -}}internal{{- end }}
-alb.ingress.kubernetes.io/security-groups: "generic-web{{ if .Values.ingressExtra.public -}} ,generic-public-web{{- end -}}"
+alb.ingress.kubernetes.io/security-groups: "{{ .Values.global.environmentName}}-sg"
 alb.ingress.kubernetes.io/ssl-policy: "{{ .Values.ingressExtra.tlsPolicy | default "ELBSecurityPolicy-TLS-1-2-2017-01"}}"
 alb.ingress.kubernetes.io/success-codes: "200"
 alb.ingress.kubernetes.io/target-type: "ip"
